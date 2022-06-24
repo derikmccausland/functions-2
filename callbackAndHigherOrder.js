@@ -130,17 +130,19 @@ uniq(names, uniqArr => console.log(`The new names array with all the duplicate i
 */
 
 // CODE HERE 
+const each = (arry1, cb) => arry1.forEach((elem, i) => cb(elem, i)) 
 
 
 /*
-  Invoke the each function, passing in the names array and a callback function.
-  The callback function should take in two parameters, item and index.
-  The callback should print a string that says:
-  'The item at index [INDEXPARAM] is [ITEMPARAM].'
+Invoke the each function, passing in the names array and a callback function.
+The callback function should take in two parameters, item and index.
+The callback should print a string that says:
+'The item at index [INDEXPARAM] is [ITEMPARAM].'
 */
 
 // CODE HERE
-
+each(names,(elem, i) => console.log(`${elem} is at index ${i}`))
+// numArray.forEach((elem, i) => console.log(`${elem} is at index ${i}`))
 
 ////////// PROBLEM 7 //////////
 
